@@ -151,7 +151,7 @@ This helps the gateway identify communication interruptions and avoid treating o
 
 The prototype was implemented using two STM32F446RE Nucleo development boards connected through SN65HVD230 CAN transceivers.
 
-![Hardware Setup](images/hardware_setup.png)
+<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/a218bef2-213a-4920-9b21-8fa696b2f616" />
 
 *Figure 1. Physical hardware implementation of the CAN-Ethernet diagnostic gateway.*
 
@@ -159,9 +159,10 @@ The prototype was implemented using two STM32F446RE Nucleo development boards co
 
 The gateway forwards received diagnostic parameters through the W5500 Ethernet controller to a Flask-based web dashboard.
 
-![Dashboard Results](images/dashboard_results.png)
+<img width="1351" height="887" alt="image" src="https://github.com/user-attachments/assets/7cb8f4b1-1dad-4b1d-a8fb-eb750e9283b3" />
 
 *Figure 2. Real-time vehicle parameter monitoring dashboard.*
+
 ## 11. Limitations
 
 - The prototype uses an STM32 sender to simulate a vehicle-side ECU.
