@@ -145,19 +145,23 @@ The gateway uses timestamp-based timeout checks to identify outdated data.
 
 This helps the gateway identify communication interruptions and avoid treating old readings as fresh data.
 
-## 10. Results and Demonstration
+## 10. Experimental Setup and Results
 
-Add your actual project photographs and screenshots in this section.
+### 10.1 Hardware Implementation
 
-Suggested evidence:
+The prototype was implemented using two STM32F446RE Nucleo development boards connected through SN65HVD230 CAN transceivers.
 
-- Complete hardware setup.
-- Two-node CAN communication setup.
-- CAN sender output in Tera Term.
-- CAN receiver output in Tera Term.
-- Live vehicle monitoring dashboard.
-- Ethernet communication demonstration.
+![Hardware Setup](images/hardware_setup.png)
 
+*Figure 1. Physical hardware implementation of the CAN-Ethernet diagnostic gateway.*
+
+### 10.2 Real-Time Dashboard
+
+The gateway forwards received diagnostic parameters through the W5500 Ethernet controller to a Flask-based web dashboard.
+
+![Dashboard Results](images/dashboard_results.png)
+
+*Figure 2. Real-time vehicle parameter monitoring dashboard.*
 ## 11. Limitations
 
 - The prototype uses an STM32 sender to simulate a vehicle-side ECU.
