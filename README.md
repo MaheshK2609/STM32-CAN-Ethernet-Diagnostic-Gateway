@@ -1,6 +1,3 @@
-# STM32-CAN-Ethernet-Diagnostic-Gateway
-STM32F4-based CAN-Ethernet diagnostic gateway for real-time vehicle parameter monitoring. Uses CAN communication (500 kbps), BMP280 and DS18B20 sensors, W5500 Ethernet, and a Flask-based web dashboard.
-
 # STM32 CAN-Ethernet Diagnostic Gateway for Vehicle Parameter Monitoring
 
 An STM32F4-based diagnostic gateway that collects vehicle-related parameters through CAN communication and transfers the received data over Ethernet for monitoring through a web dashboard.
@@ -28,6 +25,7 @@ The prototype demonstrates communication between embedded nodes using CAN and Et
 
 ## 3. System Architecture
 
+```mermaid
 flowchart TD
     A[STM32F446RE Sender] --> B[SN65HVD230 CAN Transceiver]
     B --> C[CAN Bus - 500 kbit/s]
@@ -36,7 +34,7 @@ flowchart TD
     E --> F[W5500 Ethernet Controller]
     F --> G[Ethernet Network]
     G --> H[Flask Web Dashboard]
-
+```
 
 ## 4. Hardware Components
 
