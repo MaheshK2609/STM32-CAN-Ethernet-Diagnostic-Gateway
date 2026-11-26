@@ -77,17 +77,23 @@ The receiver uses CAN FIFO0 interrupt-based reception and message filtering to p
 
 The CAN bit timing is configured using the following equation:
 
-\[
-Bitrate = \frac{CAN\ Clock}{Prescaler \times Total\ TQ}
-\]
+The CAN bit timing is configured using the following equation:
 
-\[
-Bitrate = \frac{45\,MHz}{18 \times 5}
-\]
+$$
+\text{Bitrate} = \frac{\text{CAN Clock}}{\text{Prescaler} \times \text{Total TQ}}
+$$
 
-\[
-\boxed{Bitrate = 500\,kbit/s}
-\]
+For the implemented configuration:
+
+$$
+\text{Bitrate} = \frac{45\,\text{MHz}}{18 \times 5}
+$$
+
+Therefore,
+
+$$
+\boxed{\text{Bitrate} = 500\,\text{kbit/s}}
+$$
 
 Each CAN bit consists of:
 
